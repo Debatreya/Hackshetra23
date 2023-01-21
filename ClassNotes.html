@@ -1,52 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClassNotes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>class notes</title>
-</head>
-<body>
+    <style>
+      body{
+        color-scheme: dark;
+        background-color: black;
+      }
+      *{
+        box-sizing: border-box;
+        color: aliceblue;
+      }
+      h2{
+        text-align: center;
+      }
+      header{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: chartreuse;
+      }
+      section{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .sub1, .sub2{
+        width: 30%;
+      }
+      iframe{
+        width: 100%;
+      }
+      .sub3{
+        width: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1><u>CLASS NOTES</u></h1>
+    </header>
+    <hr>
+    <hr>
     <main>
-        <h1><b>NOTES</b></h1>
-         <div id="sub1">
-            <h2>Subject 1</h2>
-            <hr>
-            <br>
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-              
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              
-              <div class="card" aria-hidden="true">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                  <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                  </p>
-                  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-                </div>
-              </div>
-        </div>
-         <div id="sub2"><h2>Subject 2</h2></div>
-         <div id="sub3"><h2>Subject 3</h2></div>
-         <div id="sub4"><h2>Subject 4</h2></div>
-         <div id="sub5"><h2>Subject 5</h2></div>
-
+      <h2>PSPS</h2>
+      <br>
+    <section>
+    <div class="sub1 note1"><iframe src="https://drive.google.com/file/d/10FjDkZ4IQnfZLl86o1r_OthXifarmTh5/preview" height="480" allow="autoplay"></iframe></div>
+    <div class="sub1 note2"><iframe src="https://drive.google.com/file/d/1F1LGCzU_qtV4eqPAQ3-CNsgM77ZYM3ie/preview" height="480" allow="autoplay"></iframe></div>
+    <div class="sub1 note3"><iframe src="https://drive.google.com/file/d/1g8MHlSs_Zd8IWrYNF-g6BzCQOD_YJD3E/preview" height="480" allow="autoplay"></iframe></div>
+    </section>
+    <hr>
+    <h2>ENERGY and ENVIRONMENT</h2>
+    <br>
+    <section>
+    <div class="sub2 note1"><iframe src="https://drive.google.com/file/d/13N90PpF1517Hwy0XNQy7tonuZdw_9p8b/preview" height="480" allow="autoplay"></iframe></div>
+    <div class="sub2 note2"><iframe src="https://drive.google.com/file/d/1F4OOVH0B3U_F-4qHGbT_FDAKXyQMTUgU/preview" height="480" allow="autoplay"></iframe></div>
+    <div class="sub2 note3"><iframe src="https://drive.google.com/file/d/12BEXIWK0ehl3AyH-iap4u8CDLYgvat1w/preview" height="480" allow="autoplay"></iframe></div>
+    </section>
+    <hr>
+    <h2>PHYSICS</h2>
+    <br>
+    <section>
+    <div class="sub3 note1"><iframe src="https://drive.google.com/file/d/1pElTCpO58gsNbpVlNDO6KtaKm6Cb4Q2g/preview" height="480" allow="autoplay"></iframe></div>
+    <div class="sub3 note2"><iframe src="https://drive.google.com/file/d/1SBDjCs75mOfvPeUqO3NlbVNyhl2Yw5ai/preview" height="480" allow="autoplay"></iframe></div>
+    </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
