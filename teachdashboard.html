@@ -96,7 +96,9 @@ img{
     margin-left: 5px;
     margin-right: 5px;
 }
-
+table button{
+  text-align: right;
+}
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
@@ -160,6 +162,7 @@ label{
   margin-top: 10%;
   margin-bottom: 5%;
 }
+
 .upcom{
   margin-top: 4%;
   margin-bottom: 3%;
@@ -172,6 +175,9 @@ label{
 .upcom:hover{
   cursor: pointer;
   background-color: cornflowerblue;
+}
+#grade{
+  width: 30px;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -246,14 +252,15 @@ label{
                     <a href="classes.html">Classes</a>
                 </li>
                 <hr>
-                <li>
-                    <a href="#">Class Notes</a>
-                </li>
+               <li>
+                    <a href="#">Class Notes </a>
+                </li> 
             </ul>
         </nav>
         <div class="container text-center">
           <div class="row cols-2">
             <div class="col">
+              <form action="" method="get">
               <table class="table">
                 <label for="username"><h4>Class-</h4></label>
         <input type="text" placeholder="XII" id="class">
@@ -262,6 +269,7 @@ label{
                     <th scope="col">Roll No.</th>
                     <th scope="col">Name</th>
                     <th scope="col">Attendance</th>
+                    <th scope="col">Grades</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -269,39 +277,48 @@ label{
                     <th scope="row">1</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
                     <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
                     <td><input type="checkbox" checked></td>
+                    <td><input type="text" id="grade"></td>
                   </tr>
                 </tbody>
               </table>
+              <button type="submit">Submit</button>
+            </form>
             </div>
             <div class="col">
               <div class="content">
