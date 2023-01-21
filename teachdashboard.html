@@ -162,7 +162,24 @@ label{
   margin-top: 10%;
   margin-bottom: 5%;
 }
-
+#submit{
+            background-color: #614caf;
+            color: white;
+            margin-top: 20px;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: 3px solid #614caf;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            cursor: pointer;
+            margin-top: 18px;
+            margin-left: 5px;
+            background-color: #20154a;
+            color: yellow;
+        }
 .upcom{
   margin-top: 4%;
   margin-bottom: 3%;
@@ -223,9 +240,6 @@ label{
             <a class="nav-link active" aria-current="page" href="student.html">Add Student</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="teacher.html">Add Teacher</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="class.html">Add Class</a>
           </li>
         </ul>
@@ -249,11 +263,11 @@ label{
                 </li>
                 <hr>
                 <li>
-                    <a href="classes.html">Classes</a>
+                    <a href="classes.html">Time Table</a>
                 </li>
                 <hr>
                <li>
-                    <a href="#">Class Notes </a>
+                    <a href="teacher_notes.html">Class Notes </a>
                 </li> 
             </ul>
         </nav>
@@ -317,7 +331,7 @@ label{
                   </tr>
                 </tbody>
               </table>
-              <button type="submit">Submit</button>
+              <button type="submit" id="submit">Submit</button>
             </form>
             </div>
             <div class="col">
