@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Manageria/assignment</title>
+    <style>
+        body{
+            width: 100%;
+            background-color: black;
+        }
+        .container{
+            margin-top: 12px;
+            width: 100%;
+        }
+        .pending h3{
+            color: rgb(170, 94, 94);
+            text-align: center;
+        }
+        .ended{
+            display: flex;
+            justify-content: space-around;
+        }
+        .submitted h3{
+            color: aqua;
+            text-align: center;
+        }
+        .submitted{
+            width: 49%;
+        }
+        .failed{
+            width: 49%;
+        }
+        .failed h3{
+            color: #515a63;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-dark navbar bg-dark" data-bs-theme="dark">
@@ -17,7 +48,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="studashboard.html">Profile</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -29,11 +60,101 @@
       </nav>
     <div class="container">
         <div class="pending">
-
+            <h3>Assignments Pending... </h3>
+            <table class="table table-danger table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Subject</th>
+                      <th scope="col">Assignment Name</th>
+                      <th scope="col">Deadline</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Sub1</td>
+                      <td>Assign1</td>
+                      <td>22.01.23</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Sub2</td>
+                      <td>Assign3</td>
+                      <td>24.01.23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Sub2</td>
+                        <td>Assign4</td>
+                        <td>25.01.23</td>
+                      </tr>
+                  </tbody>
+                </table>
         </div>
         <div class="ended">
-            <div class="submitted"></div>
-            <div class="failed"></div>
+            <div class="submitted">
+                <h3>Asignments submitted..</h3>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Subject</th>
+                          <th scope="col">Assignment Name</th>
+                          <th scope="col">Marks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Sub1</td>
+                          <td>Assign2</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Sub2</td>
+                          <td>Assign1</td>
+                          <td>95</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sub2</td>
+                            <td>Assign2</td>
+                            <td>80</td>
+                          </tr>
+                      </tbody>
+                    </table>
+            </div>
+            <div class="failed">
+                <h3>Failed to Submit these...</h3>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Subject</th>
+                          <th scope="col">Assignment Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Sub1</td>
+                          <td>Assign2</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Sub2</td>
+                          <td>Assign1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sub2</td>
+                            <td>Assign2</td>
+                          </tr>
+                      </tbody>
+                    </table>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
