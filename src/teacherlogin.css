@@ -1,0 +1,19 @@
+body, html{
+    width: 100%;
+    background-color: black;
+  }
+  .container form{
+    width:fit-content;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  h1{
+    text-align: center;
+    color: blueviolet;
+  }
+  .navbar-brand{
+    color: orange;
+  }
