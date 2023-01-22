@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Performance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+            color-scheme: dark;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color: aquamarine;
+        }
+        .left li{
+            margin-top: 4%;
+            margin-bottom: 3%;
+            border: 2px dashed cornflowerblue;
+            border-radius: 4px;
+            width: 60%;
+            padding: 3px;
+            margin-left: 10%;
+            color: burlywood;
+        }
+        li:hover{
+            cursor: pointer;
+            background-color: cornflowerblue;
+        }
+        .container{
+            display: flex;
+        }
+        .left{
+            width: 30%;
+        }
+        .right{
+            width: 60%;
+        }
+        h3{
+            margin-left: 10%;
+            margin-bottom: 5px;
+            color: cadetblue;
+        }
+        h5{
+            color: aliceblue;
+            text-align: center;
+        }
+        button{
+            background-color: transparent;
+        }
+    </style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-dark navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Manageria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="studashboard.html">Profile</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <h1>Academic Progress report</h1>
+    <div class="container">
+        <div class="left">
+            <h3>EXAM</h3>
+            <ul>
+                <li>
+                    <button><span>Mid-Sem 1</span></button>
+                </li>
+                <li>
+                    <button><span>Mid-Sem 2</span></button>
+                </li>
+                <li>
+                    <button><span>Endsem</span></button>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <h5>Your Result is here</h5>
+            <table class="table table-primary table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Marks</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Sub1</th>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <th>Sub2</th>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <th>Sub3</th>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <th>Sub4</th>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
