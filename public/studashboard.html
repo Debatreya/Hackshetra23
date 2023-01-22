@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manageria/teacher_dashboard</title>
+    <title>Manageria/student_dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         /*
@@ -99,9 +99,7 @@ img{
     margin-left: 5px;
     margin-right: 5px;
 }
-table button{
-  text-align: right;
-}
+
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
@@ -165,24 +163,6 @@ label{
   margin-top: 10%;
   margin-bottom: 5%;
 }
-#submit{
-            background-color: #614caf;
-            color: white;
-            margin-top: 20px;
-            padding: 8px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border: 3px solid #614caf;
-            border-radius: 5px;
-        }
-        #submit:hover{
-            cursor: pointer;
-            margin-top: 18px;
-            margin-left: 5px;
-            background-color: #20154a;
-            color: yellow;
-        }
 .upcom{
   margin-top: 4%;
   margin-bottom: 3%;
@@ -191,14 +171,15 @@ label{
   width: 60%;
   padding: 8px;
   margin-left: 20%;
+  background-color: #0a240b;
+  color: yellow;
 }
 .upcom:hover{
   cursor: pointer;
   background-color: cornflowerblue;
+  color: #000000;
 }
-#grade{
-  width: 30px;
-}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -225,7 +206,7 @@ label{
         display: none;
     }
 }
-    </style>
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-dark navbar bg-dark" data-bs-theme="dark">
@@ -239,12 +220,6 @@ label{
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="student.html">Add Student</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="class.html">Add Class</a>
-          </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
@@ -256,97 +231,112 @@ label{
     <div class="wrapper">
     <nav id="sidebar">
             <div class="sidebar-header">
-              <img src="teach_profile.png" alt="profile">
-                <h3>Teacher Profile</h3>
+              <img src="profile.png" alt="profile">
+                <h3>Student Profile</h3>
                 <hr>
             </div>
             <ul class="list-unstyled components">
                 <li>
-                    <a href="assignment_teach.html">Assignment</a>
+                    <a href="assignment.html">Assignment</a>
                 </li>
                 <hr>
                 <li>
-                    <a href="classes.html">Time Table</a>
+                  <a href="#" onclick="myFunction()">Attendance</a>
                 </li>
                 <hr>
-               <li>
-                    <a href="teacher_notes.html">Class Notes </a>
-                </li> 
+                <li>
+                    <a href="leave.html">Take Leave</a>
+                </li>
+                <hr>
+                <li>
+                  <a href="ClassNotes.html">Class Notes</a>
+              </li>
+              <hr>
+              <li>
+                <a href="academic.html">Academic Performance</a>
+            </li>
+            <hr>
+            <li>
+              <a href="todolist.html">To do List</a>
+          </li>
+          
             </ul>
         </nav>
         <div class="container text-center">
           <div class="row cols-2">
             <div class="col">
-              <form action="" method="get">
+            <div class="row-11 cols-2">
               <table class="table">
-                <label for="username"><h4>Class-</h4></label>
-        <input type="text" placeholder="XII" id="class">
+                <label for="username"><h4>Time Table</h4></label>
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Roll No.</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Attendance</th>
-                    <th scope="col">Grades</th>
+                    <th scope="col">Period</th>
+                    <th scope="col">
+                      <label for="username">DAY - </label>
+                      <input type="text" placeholder="MONDAY" id="class">
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>sub1</td>         
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>sub2</td>            
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>break</td>            
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>break</td>            
                   </tr>
                   <tr>
                     <th scope="row">5</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>break</td>           
                   </tr>
                   <tr>
                     <th scope="row">6</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>sub3</td>            
                   </tr>
                   <tr>
                     <th scope="row">7</th>
-                    <td aria-placeholder="Name"><input type="text" placeholder="Name" id="Name"></td>
-                    <td><input type="checkbox" checked></td>
-                    <td><input type="text" id="grade"></td>
+                    <td>sub4</td>             
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>break</td>            
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>break</td>            
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>sub5</td>            
                   </tr>
                 </tbody>
               </table>
-              <button type="submit" id="submit">Submit</button>
-            </form>
             </div>
+          </div>
             <div class="col">
               <div class="content">
-                <h3>Upcoming Classes</h3>
-                <div class="upcom it1">Next class at 8:00 in class CS1</div>
-                <div class="upcom it2">Next class at 11:35 in class CS4</div>
-                <div class="upcom it3">Next class at 16:00 in class ME2</div>
-                <div class="upcom it4">Next class at 18:30 in class PI3</div>
+                <h3>Upcoming ASSIGNMENT</h3>
+                <div class="upcom it1">EP FILE submit by 10:00</div>
+                <div class="upcom it2">PSPS assignment by 14-01-2023 10:00</div>
+                <div class="upcom it3">PSPS assignment by 14-01-2023 10:00</div>
+                <div class="upcom it4">PSPS assignment by 14-01-2023 10:00</div>
               </div>
             </div>
           </div>
         </div>
+        <script>
+          function myFunction() {
+            alert("Attendance: \nSub1 = 85%\nSub2 = 78%\n Sub3 = 90%");
+          }
+          </script>
 </body>
 </html>

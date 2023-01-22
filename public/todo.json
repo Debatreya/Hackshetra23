@@ -1,6 +1,6 @@
 {
-    "tasks": [
-        {"task" : "Complete PSPS Assignment"}, 
-        {"task" : "Prepate for viva"}
-    ]
+    "tasks" : [{
+        "task" : "Complete task",
+        "deadline" : "Jan-13"
+    }]
 }
